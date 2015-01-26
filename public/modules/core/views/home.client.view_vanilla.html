@@ -1,0 +1,154 @@
+<section data-ng-controller="HomeController">
+	
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="row">
+				<div class="col-xs-12">	
+					<img src="modules/core/images/calmapit_icon_55.png" style="margin:10px"/>			
+					<img src="modules/core/images/calmapit_logo1.png" style="width:150px;margin:20px"/>			
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<div class="row">
+		
+		<div class="col-sm-4" ng-repeat="alert in alerts">
+			<div class="row">
+				<div class="col-xs-3">
+					<h1>
+						<button type="button" class="btn" ng-class="alert.colour">
+							<i class="glyphicon glyphicon-globe"></i>
+
+						</button>
+					</h1>
+				</div>
+				<div class="col-xs-9">
+					{{alert.text}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-2">	
+					<span class="text-muted">{{alert.description}}</span>			
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="row">
+				<div class="col-xs-3">
+					<h1>
+						<button type="button" class="btn btn-warning pull-right">
+							<i class="glyphicon glyphicon-calendar"></i>
+
+						</button>
+					</h1>
+				</div>
+				<div class="col-xs-9">
+					this will be some sort of description
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-2">	
+					<span class="text-muted">CALENDAR</span>				
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="row">
+				<div class="col-xs-3">
+					<h1>
+						<button type="button" class="btn btn-success pull-right">
+							<i class="glyphicon glyphicon-road"></i>
+
+						</button>
+					</h1>
+				</div>
+				<div class="col-xs-9">
+					this will be some sort of description
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-2">	
+					<span class="text-muted">TRIPS</span>				
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="row">
+				<div class="col-xs-3">
+					<h1>
+						<button type="button" class="btn btn-info pull-right">
+							<i class="glyphicon glyphicon-globe"></i>
+
+						</button>
+					</h1>
+				</div>
+				<div class="col-xs-9">
+					this will be some sort of description
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-2">	
+					<span class="text-muted">TRIPS</span>				
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="row">
+				<div class="col-xs-3">
+					<h1>
+						<button type="button" class="btn btn-primary pull-right">
+							<i class="glyphicon glyphicon-globe"></i>
+
+						</button>
+					</h1>
+				</div>
+				<div class="col-xs-9">
+					this will be some sort of description
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-2">	
+					<span class="text-muted">TRIPS</span>				
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="row">
+				<div class="col-xs-3">
+					<h1>
+						<button type="button" class="btn btn-info pull-right">
+							<i class="glyphicon glyphicon-camera"></i>
+
+						</button>
+					</h1>
+				</div>
+				<div class="col-xs-9">
+					this will be some sort of description
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-2">	
+					<span class="text-muted">TRIPS</span>				
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+    <div class="panel-body">
+        <div class="col-md-offset-3 col-md-3">
+            <div>Developed by:</div>
+            <h3>Paul Jones</h3>
+
+            <div>pjones@calmapit.com</div>
+            <a href="www.calmapit.com">CalMapIt</a>
+            <a href="www.tripscope.meteor.com">My Blog</a>
+        </div>
+        <div class="col-md-3">
+            <div>Art work by:</div>
+            <h3>Shmik</h3>
+            <a href="http://shmik.com/">http://shmik.com/</a>
+        </div>
+    </div>
