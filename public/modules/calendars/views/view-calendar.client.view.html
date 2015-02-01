@@ -1,6 +1,9 @@
 <section data-ng-controller="CalendarsController" data-ng-init="findOne()">
 	<div class="page-header">
-		<h1 data-ng-bind="calendar.name"></h1>
+			Calendar Event:<h4 class="list-group-item-heading" data-ng-bind="calendar.name"></h4>
+            Event Description:<h4 class="list-group-item-heading" data-ng-bind="calendar.event_desc"></h4>
+            Event Location:<h4 class="list-group-item-heading" data-ng-bind="calendar.location"></h4>
+            Event Type:<h4 class="list-group-item-heading" data-ng-bind="calendar.event_type"></h4>
 	</div>
 	<div class="pull-right" data-ng-show="((authentication.user) && (authentication.user._id == calendar.user._id))">
 		<a class="btn btn-primary" href="/#!/calendars/{{calendar._id}}/edit">

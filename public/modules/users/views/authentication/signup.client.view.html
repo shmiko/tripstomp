@@ -31,6 +31,22 @@
 	<div class="col-xs-offset-2 col-xs-8 col-md-offset-5 col-md-2">
 		<form name="userForm" data-ng-submit="signup()" class="signin form-horizontal" novalidate autocomplete="off">
 			<fieldset>
+				<div class="form-group">
+					<div class="input-group">
+					  <span class="input-group-addon" id="basic-addon1">
+					  	<i class="glyphicon glyphicon-user text-muted"></i>
+					  </span>
+						<input type="text" required id="firstName" name="firstName" class="form-control" data-ng-model="credentials.firstName" placeholder="First Name">
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="input-group">
+					  <span class="input-group-addon" id="basic-addon1">
+					  	<i class="glyphicon glyphicon-user text-muted"></i>
+					  </span>
+						<input type="text" id="lastName" name="lastName" class="form-control" data-ng-model="credentials.lastName" placeholder="Last Name">
+					</div>
+				</div>
 				<div class="text-center form-group">
 					<div class="input-group">
 					  <span class="input-group-addon" id="basic-addon1">
@@ -47,14 +63,7 @@
 					  <input type="password" id="password" name="password" class="form-control" data-ng-model="credentials.password" placeholder="Password">
 					</div>
 				</div>
-				<div class="form-group">
-					<div class="input-group">
-					  <span class="input-group-addon" id="basic-addon1">
-					  	<i class="glyphicon glyphicon-asterisk text-muted"></i>
-					  </span>
-					  <input type="password" id="password" name="password" class="form-control" data-ng-model="credentials.password" placeholder="Password">
-					</div>
-				</div>
+				
 				<div class="form-group">
 					<div class="input-group">
 					  <span class="input-group-addon" id="basic-addon1">

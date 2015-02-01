@@ -38,7 +38,7 @@ exports.read = function(req, res) {
  */
 exports.update = function(req, res) {
 	var customer = req.customer ;
-
+	
 	customer = _.extend(customer , req.body);
 
 	customer.save(function(err) {

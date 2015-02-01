@@ -13,7 +13,22 @@ var CalendarSchema = new Schema({
 	name: {
 		type: String,
 		default: '',
-		required: 'Please fill Calendar name',
+		required: 'Please fill Calendar Event',
+		trim: true
+	},
+	event_desc: {
+		type: String,
+		default: '',
+		trim: true
+	},
+	location: {
+		type: String,
+		default: '',
+		trim: true
+	},
+	event_type: {
+		type: String,
+		default: '',
 		trim: true
 	},
 	created: {

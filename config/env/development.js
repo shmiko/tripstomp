@@ -3,9 +3,9 @@
 
 module.exports = {
 	//db: 'mongodb://localhost/tripstomp-dev',
-	db: 'mongodb://tripstomp:waxnepke1@ds031641.mongolab.com:31641/calmapit',
+	db: 'mongodb://tripstomp:waxnepke@ds031641.mongolab.com:31641/calmapit',
 	app: {
-		title: 'TripStomp - UnRavel Travel'
+		title: 'DEV TripStomp - UnRavel Travel'
 	},
 	facebook: {
 		clientID: process.env.FACEBOOK_ID || 'APP_ID',
