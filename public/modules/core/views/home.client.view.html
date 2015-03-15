@@ -36,7 +36,29 @@
 		
 </section>
 
-
+<div ng-controller="AppCtrl as appCtrl">
+  <md-content class="md-padding" style="{{tile.back}}">
+    <md-grid-list
+        md-cols-gt-md="8" md-cols-sm="3" md-cols-md="6"
+        md-row-height-gt-md="1:1" md-row-height="4:3"
+        md-gutter-gt-md="1px" md-gutter-gt-sm="1px" md-gutter="1px">
+      <md-grid-tile
+          ng-repeat="tile in appCtrl.colorTiles"
+          ng-style="{
+            'background': tile.color
+          }"
+          md-colspan-gt-sm="{{tile.colspan}}"
+          md-rowspan-gt-sm="{{tile.rowspan}}">
+          <span class="txt" style="color:{{tile.text_color}}">{{tile.text}}</span>
+          	<md-tooltip>
+          		{{tile.text}}	
+        	</md-tooltip>
+      </md-grid-tile>
+    </md-grid-list>
+  </md-content>
+</div>
+<br>
+<br>
 <div class="panel-body">
     <div class="col-md-offset-3 col-md-3">
         <div>Developed by:</div>
