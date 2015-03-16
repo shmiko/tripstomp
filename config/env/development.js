@@ -2,7 +2,7 @@
 
 
 module.exports = {
-	db: 'mongodb://localhost/tripstomp-dev',
+	db: 'mongodb://tripstomp:waxnepke@ds031641.mongolab.com:31641/calmapit',
 	
 	app: {
 		title: 'TripStomp - UnRavel Travel'
