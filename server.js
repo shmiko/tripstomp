@@ -33,4 +33,4 @@ app.listen(config.port);
 exports = module.exports = app;
 
 // Logging initialization
-console.log('Tripstomp application started on port ' + config.port);
+console.log('Tripstomper application started on port ' + config.port);

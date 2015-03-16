@@ -5,7 +5,7 @@ module.exports = {
 	db: 'mongodb://localhost/tripstomp-dev',
 	
 	app: {
-		title: 'TripStomp - UnRavel Travel'
+		title: 'TripStomper 2 - UnRavel Travel'
 	},
 	facebook: {
 		clientID: process.env.FACEBOOK_ID || 'APP_ID',
