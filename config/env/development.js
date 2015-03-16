@@ -3,7 +3,7 @@
 process.env.MONGOHQ_URL = 'mongodb://tripstomp:waxnepke@ds031641.mongolab.com:31641/calmapit';
 
 module.exports = {
-	db: 'mongodb://tripstomp:waxnepke@ds031641.mongolab.com:31641/calmapit',
+	db: 'mongodb://localhost/tripstomp-dev',
 	
 	app: {
 		title: 'TripStomp - UnRavel Travel'
