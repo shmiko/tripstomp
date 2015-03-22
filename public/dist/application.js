@@ -27,11 +27,11 @@ var ApplicationConfiguration = (function() {
 angular.module(ApplicationConfiguration.applicationModuleName, ApplicationConfiguration.applicationModuleVendorDependencies);
 
 // Setting HTML5 Location Mode
-angular.module(ApplicationConfiguration.applicationModuleName).config(['$locationProvider',
-	function($locationProvider) {
-		$locationProvider.hashPrefix('!');
-	}
-])
+	.config(['$locationProvider',
+		function($locationProvider) {
+			$locationProvider.hashPrefix('!');
+		}
+	]);
 
 	.config(["$mdThemingProvider", function($mdThemingProvider) {
 	  $mdThemingProvider.theme('default')
